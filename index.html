@@ -253,6 +253,22 @@ At Igloo Ice-cream & Co., we believe ice cream is more than a dessert — it’s
 <footer>
 <p>© 2026 Igloo Ice-cream & Co. All Rights Reserved.</p>
 </footer>
+<script>
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.style.opacity=1;
+entry.target.style.transform="translateY(0)";
+}
+});
+});
 
+document.querySelectorAll(".section").forEach(sec=>{
+sec.style.opacity=0;
+sec.style.transform="translateY(40px)";
+observer.observe(sec);
+});
+</script>
+  
 </body>
 </html>
