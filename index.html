@@ -6,6 +6,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+.card{
+border:1px solid rgba(0,0,0,0.05);
+}
+
+.card:hover{
+box-shadow:0 0 25px rgba(56,189,248,0.35);
+}
+.card img{
+transition:transform 0.4s ease;
+}
+
+.card img:hover{
+transform:scale(1.08);
+}
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:28px;
+padding:15px 18px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 0 20px rgba(37,211,102,0.6);
+z-index:1000;
+transition:transform 0.3s ease;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.15);
+}
+html{
+scroll-behavior:smooth;
+}
 body{
 margin:0;
 font-family:Arial, sans-serif;
@@ -270,5 +305,7 @@ observer.observe(sec);
 });
 </script>
   
+<a href="https://wa.me/919140969596" class="whatsapp-float">💬</a>
+
 </body>
 </html>
