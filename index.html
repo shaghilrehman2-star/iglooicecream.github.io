@@ -90,6 +90,42 @@ text-align:center;
 padding:30px;
 margin-top:50px;
 }
+/* Animations */
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(40px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+.hero{
+animation:fadeIn 1.5s ease;
+}
+
+.section{
+animation:fadeUp 1.2s ease;
+}
+
+.card{
+transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+button{
+transition:transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover{
+transform:scale(1.08);
+background:#ec4899;
+}
 </style>
 </head>
 
